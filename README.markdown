@@ -87,7 +87,7 @@ David Sinclair
 Dejal Systems, LLC
 
 
-Contact: <http://www.dejal.com/contact/?subject=Dejal+View&ref=dejalbackgroundview>
+Contact: <http://www.dejal.com/contact/?subject=DejalBackgroundView>
 More open source projects: <http://www.dejal.com/developer>
 Open source announcements on Twitter: <http://twitter.com/dejalopen>
 General Dejal news on Twitter: <http://twitter.com/dejal>
