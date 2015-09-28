@@ -3,7 +3,7 @@
 //  Dejal Open Source
 //
 //  Created by David Sinclair on 2005-08-27.
-//  Copyright (c) 2005-2014 Dejal Systems, LLC. All rights reserved.
+//  Copyright (c) 2005-2015 Dejal Systems, LLC. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without modification,
 //  are permitted provided that the following conditions are met:
@@ -36,6 +36,7 @@
 {
     if ((self = [super initWithFrame:frame]))
     {
+        self.allowMouseDownToMoveWindow = NO;
         self.drawsBackground = YES;
         self.drawsBorder = YES;
         self.backgroundColor = nil;
@@ -63,6 +64,11 @@
         [self.borderColor set];
         NSFrameRectWithWidthUsingOperation(self.bounds, 1.0, NSCompositeSourceOver);
     }
+}
+
+- (BOOL)mouseDownCanMoveWindow;
+{
+    return self.allowMouseDownToMoveWindow;
 }
 
 - (NSColor *)backgroundColor;
