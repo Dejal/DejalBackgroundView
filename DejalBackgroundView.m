@@ -56,13 +56,13 @@
     if (self.drawsBackground)
     {
         [self.backgroundColor set];
-        NSRectFillUsingOperation(rect, NSCompositeSourceOver);
+        NSRectFillUsingOperation(rect, NSCompositingOperationSourceOver);
     }
     
     if (self.drawsBorder)
     {
         [self.borderColor set];
-        NSFrameRectWithWidthUsingOperation(self.bounds, 1.0, NSCompositeSourceOver);
+        NSFrameRectWithWidthUsingOperation(self.bounds, 1.0, NSCompositingOperationSourceOver);
     }
 }
 
